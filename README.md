@@ -73,9 +73,8 @@ Make sure you have the following installed on your machine:
 - [Git](https://git-scm.com/)
 - [Python](https://www.python.org/) (version 3.8 or higher)
 - [pip](https://pip.pypa.io/en/stable/installation/)
-- [virtualenv](https://virtualenv.pypa.io/en/latest/) (optional but recommended)
 - [Node.js](https://nodejs.org/) (version 14.0 or higher)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [npm](https://www.npmjs.com/) 
 
 ### Backend Setup <a name="backend-setup"></a>
 
@@ -111,9 +110,6 @@ pip install -r requirements.txt
 # Run in development mode
 python Apiconn.py
 
-# Run with Gunicorn (production)
-gunicorn wsgi:app
-```
 
 The API will be available at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
@@ -132,7 +128,7 @@ If you're starting a new React project:
 
 ```bash
 # Create a new React application
-npx create-react-app frontend
+npm create vite@latest --template 'Project-name'
 cd frontend
 
 # Install additional dependencies
@@ -147,19 +143,12 @@ If the React project structure already exists:
 # Install dependencies
 npm install
 
-# or if using yarn
-yarn install
-```
 
 **Running the Frontend**
 
 ```bash
 # Start the development server
 npm start
-
-# or if using yarn
-yarn start
-```
 
 The React frontend will be available at [http://localhost:3000](http://localhost:3000).
 
@@ -168,10 +157,6 @@ The React frontend will be available at [http://localhost:3000](http://localhost
 ```bash
 # Create optimized production build
 npm run build
-
-# or if using yarn
-yarn build
-```
 
 ## 📊 API Usage <a name="api-usage"></a>
 
