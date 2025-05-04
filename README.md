@@ -32,13 +32,11 @@ The Diabetes Prediction System is a machine learning-powered application designe
 This application uses a trained machine learning model to analyze input parameters such as glucose levels, blood pressure, BMI, and other relevant metrics to predict diabetes risk. The model has been trained on the widely-used Pima Indians Diabetes Dataset.
 
 ## ⚙️ Tech Stack <a name="tech-stack"></a>
-
+- **Fronend**: React js, Three js, Javascripte, HTML, CSS
 - **Backend**: Flask
 - **Machine Learning**: Scikit-learn, Pandas, NumPy
 - **Data Processing**: Pandas, NumPy
 - **Visualization**: Matplotlib, Seaborn (for model analysis)
-- **Testing**: Pytest
-- **Deployment**: Docker, Gunicorn
 
 ## 🔋 Features <a name="features"></a>
 
