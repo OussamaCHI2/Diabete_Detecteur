@@ -4,12 +4,13 @@
   <img src="https://img.shields.io/badge/-Flask-black?style=for-the-badge&logoColor=white&logo=flask&color=000000" alt="flask" />
   <img src="https://img.shields.io/badge/-Python-black?style=for-the-badge&logoColor=white&logo=python&color=3776AB" alt="python" />
   <img src="https://img.shields.io/badge/-Scikit_Learn-black?style=for-the-badge&logoColor=white&logo=scikit-learn&color=F7931E" alt="scikit-learn" />
+  <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react" />
 </div>
 
 <h3 align="center">A Machine Learning Based Diabetes Prediction API</h3>
 
 <div align="center">
-  A powerful Flask-based web API that uses machine learning to predict diabetes risk based on clinical parameters.
+  A powerful Flask-based web API with React frontend that uses machine learning to predict diabetes risk based on clinical parameters.
 </div>
 
 ## 📋 Table of Contents
@@ -18,6 +19,8 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
+   - [Backend Setup](#backend-setup)
+   - [Frontend Setup](#frontend-setup)
 5. 📊 [API Usage](#api-usage)
 6. 🧪 [Model Information](#model-information)
 7. 🖼️ [Screenshots](#screenshots)
@@ -27,12 +30,12 @@
 
 ## 🤖 Introduction <a name="introduction"></a>
 
-The Diabetes Prediction System is a machine learning-powered application designed to assist in predicting the likelihood of diabetes based on clinical parameters. Built with Flask as the backend framework, the system provides a RESTful API to receive patient data and return prediction results in JSON format.
+The Diabetes Prediction System is a machine learning-powered application designed to assist in predicting the likelihood of diabetes based on clinical parameters. Built with Flask as the backend framework and React.js for the frontend, the system provides a RESTful API to receive patient data and return prediction results in JSON format.
 
 This application uses a trained machine learning model to analyze input parameters such as glucose levels, blood pressure, BMI, and other relevant metrics to predict diabetes risk. The model has been trained on the widely-used Pima Indians Diabetes Dataset.
 
 ## ⚙️ Tech Stack <a name="tech-stack"></a>
-- **Fronend**: React js, Three js, Javascripte, HTML, CSS
+- **Frontend**: React.js, Three.js, JavaScript, HTML, CSS
 - **Backend**: Flask
 - **Machine Learning**: Scikit-learn, Pandas, NumPy
 - **Data Processing**: Pandas, NumPy
@@ -41,6 +44,8 @@ This application uses a trained machine learning model to analyze input paramete
 ## 🔋 Features <a name="features"></a>
 
 👉 **RESTful API**: Provides a clean API interface for prediction requests and responses
+
+👉 **Responsive React Frontend**: Interactive UI for submitting patient data and viewing results
 
 👉 **Preprocessing Pipeline**: Automatically handles data normalization and preparation
 
@@ -66,6 +71,10 @@ Make sure you have the following installed on your machine:
 - [Python](https://www.python.org/) (version 3.8 or higher)
 - [pip](https://pip.pypa.io/en/stable/installation/)
 - [virtualenv](https://virtualenv.pypa.io/en/latest/) (optional but recommended)
+- [Node.js](https://nodejs.org/) (version 14.0 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Backend Setup <a name="backend-setup"></a>
 
 **Cloning the Repository**
 
@@ -93,7 +102,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Running the Application**
+**Running the Backend**
 
 ```bash
 # Run in development mode
@@ -103,9 +112,65 @@ python Apiconn.py
 gunicorn wsgi:app
 ```
 
-The application will be available at [http://127.0.0.1:5000](http://127.0.0.1:5000).
+The API will be available at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
-## 📊 API Usage <a>Flask</a>
+### Frontend Setup <a name="frontend-setup"></a>
+
+**Navigate to the Frontend Directory**
+
+```bash
+# If your frontend is in a subdirectory
+cd frontend
+```
+
+**Option 1: Installing React with Create React App**
+
+If you're starting a new React project:
+
+```bash
+# Create a new React application
+npx create-react-app frontend
+cd frontend
+
+# Install additional dependencies
+npm install axios three @mui/material @emotion/react @emotion/styled
+```
+
+**Option 2: Setting Up Existing React Project**
+
+If the React project structure already exists:
+
+```bash
+# Install dependencies
+npm install
+
+# or if using yarn
+yarn install
+```
+
+**Running the Frontend**
+
+```bash
+# Start the development server
+npm start
+
+# or if using yarn
+yarn start
+```
+
+The React frontend will be available at [http://localhost:3000](http://localhost:3000).
+
+**Building for Production**
+
+```bash
+# Create optimized production build
+npm run build
+
+# or if using yarn
+yarn build
+```
+
+## 📊 API Usage <a name="api-usage"></a>
 
 The API provides a simple endpoint for diabetes prediction:
 
@@ -169,6 +234,9 @@ The model was trained using 10-fold cross-validation to ensure reliability and r
 ![API Interface](screenshots/api_interface.png)
 *Screenshot of the API interface*
 
+![React Frontend](screenshots/react_frontend.png)
+*React frontend application*
+
 ![Model Performance](screenshots/model_performance.png)
 *Model performance visualization*
 
@@ -192,6 +260,7 @@ The system has been tested with a dataset of 2,000 patient records with the foll
 
 - [Dataset Source](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
 - [Flask Documentation](https://flask.palletsprojects.com/)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/)
 - [Project Demo](https://yourdemolink.com)
 
