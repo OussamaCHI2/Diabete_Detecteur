@@ -58,8 +58,6 @@ This application uses a trained machine learning model to analyze input paramete
 
 👉 **Comprehensive Documentation**: Includes API usage examples and parameter descriptions
 
-👉 **Dockerized Deployment**: Easy deployment with containerization
-
 👉 **Model Versioning**: Tracks model versions for reproducibility
 
 ## 🤸 Quick Start <a name="quick-start"></a>
