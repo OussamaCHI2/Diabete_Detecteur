@@ -214,7 +214,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-Your Name - [Your GitHub](https://github.com/yourusername)
+Oussama Chichaoui : https://github.com/OussamaCHI2
+Achraf Ettanouti : https://github.com/Eachr4f
 
 ## 🙏 Acknowledgments
 
