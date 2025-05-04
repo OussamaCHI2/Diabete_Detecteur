@@ -111,14 +111,8 @@ python Apiconn.py
 
 The API will be available at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
-### Frontend Setup <a name="frontend-setup"></a>
-
-**Navigate to the Frontend Directory**
-
 ```bash
-# If your frontend is in a subdirectory
-cd frontend
-```
+
 
 **Option 1: Installing React with Create React App**
 
